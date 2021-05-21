@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 
-export default function Header(props) {
+export default function Header() {
  
   const history = useHistory();
 

@@ -1,6 +1,7 @@
 import { Link, Route, Switch } from "react-router-dom";
 import ContactUs from "../components/ContactUs";
 import Home from "../components/Home";
+import Login from "../components/Login";
 import Technologies from "../components/Technologies";
 
 export const routing = (
@@ -38,6 +39,11 @@ export const routing = (
                 Contact US
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/login">
+                Login
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -47,6 +53,7 @@ export const routing = (
       <Route path="/home" component={Home} />
       <Route path="/technologies" component={Technologies} />
       <Route path="/contact" component={ContactUs} />
+      <Route path="/login" component={Login} />
     </Switch>
   </>
 );
